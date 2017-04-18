@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  main.main
+      div.uno Area de Ventas
+      div.dos
+        table(width='100%')
+          tr
+            th Actividad       
+            th Participante      
+            th Area  
+            th Estado   
+      div.tres Area de Compras  
+      div.cuatro
+        table(width='100%')
+          tr
+            th Actividad    
+            th Participante      
+            th Area    
+            th Estado   
+    script(type='text/javascript').
+      $(document).ready(function(){
+          $(".uno").click(function(){
+            $(".dos").slideToggle();
+          });
+          $(".tres").click(function(){
+            $(".cuatro").slideToggle();
+          });
+      });
+    

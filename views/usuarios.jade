@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  main.main
+    div(class="header")
+      h1 Catalogo de Usuarios 
+    table
+      tr
+        th Clave
+        th Nombre
+        th Area
+        th Cargo
+        th Correo
+        th Teléfono
+      -each value in data
+        tr
+          td=value.id_empleado
+          -if(value.apellidopaterno==null)
+            td=value.nombre+' '+value.apellidomaterno
+          -if(value.apellidomaterno==null)
+            td=value.nombre+' '+value.apellidopaterno
+          -else
+            td=value.nombre+' '+value.apellidopaterno+' '+value.apellidomaterno
+            
+          td=value.area
+          td=value.puesto  
+          td=value.correo
+          td=value.telefono
+block sidebar
+    div.menuUser
+      div
+        a(href="/usuario/nuevo", target="")
+          img(src="/images/male-user-add.png", alt="|")
+      div
+        a(href="/usuario/buscar/", target="")
+          img(src="/images/male-user-search.png", alt="|")
+      div
+        a(href="/usuario/eliminar/", target="")
+          img(src="/images/male-user-remove.png", alt="|")
+      div
+        a(href="/usuario/editar/", target="")
+          img(src="/images/male-user-edit.png", alt="|")
+          
+          

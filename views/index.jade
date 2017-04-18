@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  main
+    #cal
+      .header
+        span#prev.left.button  &#x2329; 
+        span#label.month-year  June 2010 
+        span#next.right.button  &#x232A;   
+      table#days
+        td dom
+        td lun
+        td mar
+        td mie
+        td jue
+        td vie
+        td sab    
+      #cal-frame
+        table.curr
+          tbody       
+            
+    script(src='/javascripts/calendar.js') 
+    script.
+      var cal= CALENDAR();
+      cal.init();

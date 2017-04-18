@@ -1,0 +1,13 @@
+p{
+  text-align: center;
+  font-size: 14px;
+}
+.contenido {
+  border: 2px solid rgb(59, 117, 17);
+}
+.agregar{
+  margin-left: 20%;
+}
+.cancelar{
+  margin-left: 10%;
+}

@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/forms.css')
+    link(rel='stylesheet', href='/stylesheets/menuUser.css')
+    link(rel='stylesheet', href='/stylesheets/calendar.css')  
+    script(src='/javascripts/jquery-3.1.1.min.js', type='text/javascript')
+  body
+    block header
+      div.logo
+        img(src="/images/logo-mayu.png", alt="|")
+        h1 MAYÚ
+        h1 BIENVENIDO AL SISTEMA
+    block menu
+      div.menu
+        div
+          a(href="/inicio", target="")
+            img(src="/images/home.jpg", alt="|")
+        div
+          a(href="/usuario/", target="")
+            img(src="/images/users.png", alt="|")
+        div
+          a(href="/actividad/", target="")
+            img(src="/images/activities.jpg", alt="|")
+    
+    block content  
+    
+    block sidebar   
+      
+    block fooder
+      
+    
+  
+      

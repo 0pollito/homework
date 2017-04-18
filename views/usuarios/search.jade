@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+  main(class='main')
+    form(method='post',action='')
+      div(class='header'): h1 Buscar Usuario
+      label(for='id')
+      input(type="text", name='id', placeholder='Identificador',pattern='[0-9]*' required)
+      button(type='submit',color='white') Buscar

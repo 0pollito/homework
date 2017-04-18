@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+      main(class='main')
+        form(method='post', action='')
+          div(class="header")
+            h1 Agregar Actividad!
+            h4 Rellenar los datos solicitados (todos los campos con * son obligatorios)
+          div
+            label(name='descripcion')
+              span(class='required') Descripcion: *
+              input(id='name',type='text', name='name', value='', placeholder='Descripción de Actividad', required='required', tabindex='1', autofocus='autofocus')
+          div
+            label(name='sarea')
+              span Seleccione Area: *    
+              select(id='subject',name='subject', tabindex='4')
+                //-var areas = data
+                -each value in data
+                  option=value.nombre             
+          //div
+            label(name='areas')
+              span(class='required') Areas: *
+              input(id='areas',type='text', name='areas', value='', placeholder='areas', tabindex='2', required='required')
+          //div
+            label(name='sarea')
+              span Seleccione Responsables: *     
+              select(id='subject',name='subject', tabindex='4')
+                //-var res = data[1]
+                //-each value in res
+                  option=value.nombre  
+          div
+            label(name='responsable')
+              span(class='required') Responsable(s): *
+              input(id='responsable',type='text', name='responsable', value='', placeholder='Resposables', tabindex='2', required='required')
+          div
+            label(name='fecha')
+              span(class='required') Fecha Limite: *
+              input(id='fecha',type='date', name='email', value='', placeholder='dd/mm/aaaa', tabindex='2', required='required')
+          div.botns
+            button(id='enviar',name='submit', type='submit') Aceptar
+            button(id='cancelar',type='button', onclik='/') Cancelar
+            
+
+          

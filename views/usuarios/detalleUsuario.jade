@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  main(class='main')
+    div
+      p Clave: info[0].id_empleado
+    div
+      -if(value.apellidopaterno==null)
+        p=info[1].nombre+' '+info[3].apellidomaterno
+      -if(value.apellidomaterno==null)
+        p=info[1].nombre+' '+info[2].apellidopaterno
+      -else
+        p=info[1].nombre+' '+info[2].apellidopaterno+' '+info[3].apellidomaterno
+    div
+      p Correo: info[4].id_empleado
+    div
+      p telefono: info[5].id_empleado
+    div
+      p Area: info[6].id_empleado
+    div
+      p Puesto: info[7].id_empleado
+    div
+    

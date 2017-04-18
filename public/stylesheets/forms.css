@@ -1,0 +1,99 @@
+.main form {
+  background-color: rgb(221, 209, 57);
+	max-width: 600px;
+	margin: 0 auto;
+  padding-right: 50px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: right;
+}
+.main h1 {
+  background-color: rgb(227, 106, 39);
+	margin: 0;
+	border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+.main h4{
+  color: rgb(176, 6, 6);
+}
+.main label{
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: 700;
+	font-size: .8em;
+	color: #171717;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+.main input, select {
+  display: inline-block;
+  margin-bottom: 20px;
+	padding: 8px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: .9em;
+	color: #000000;
+  font: 400 12px/20px "Roboto", Helvetica, Arial, sans-serif;
+}
+.main select:focus,input:focus {
+	outline: none;
+	border-color: rgba(187, 53, 4, 0.89);
+	transition: 0.5s;
+	color: #665851;
+}
+.main button {
+  margin-top: 0px;
+  margin: 20px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	background-color: #665851;
+	cursor:pointer;
+	outline: none;
+  text-align: center;
+}
+.main button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+  background: rgba(171, 168, 179, 0.92);
+}
+.tab {
+  width: 95%;
+}
+.main table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.main th, td {
+    padding: 5px;
+    text-align: left;
+}
+.main tr:nth-child(even) {
+    background-color: #beb7b7;
+}
+.main tr:nth-child(odd) {
+   background-color:#e9e5e5;
+}
+.main th {
+    background-color: rgba(213, 70, 70, 0.92);
+    color: white;
+}
+.botns{
+  padding-left: 50%;
+}
+.uno, .tres{
+  background: rgb(168, 17, 11);
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid rgb(200, 186, 0);
+  color: white;
+  text-align: center;
+}
